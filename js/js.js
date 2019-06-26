@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
-
 	//  Цвет ввода текста
-	$('.form__input').on('change', function(){
+	$('.form__input').on('keyup', function(){
 		let num = document.getElementById("form__phone").value;
 		let name = document.getElementById("form__name").value;
 		let title = document.getElementById("form__title").value; 
@@ -11,7 +10,6 @@ $(document).ready(function(){
 				'color':'#000000',
 			});
 		}
-
 	// Цвет кнопки формы
 	if ( name != '' && num != '' && title != '' ) {
 		$('#form__submit').css({ 
@@ -55,10 +53,8 @@ $(document).ready(function(){
 		} else {
 			$('.hide').css({'display': 'none'});
 			$('#form__phone').removeClass('grey');
-
 		}
 	})
-
 
 });
 

@@ -78,8 +78,18 @@ input:-webkit-autofill
 	margin-bottom: 40px
 	border-radius: 5px
 	display: flex
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
 	justify-content: center
-	align-items: center
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-webkit-box-orient: horizontal
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	 align-items: center
 	&__text
 		text-align: center
 		line-height: 36px
@@ -89,6 +99,9 @@ input:-webkit-autofill
 	&__row2
 		font-size: 24px
 .points__col
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
 	margin: 0 auto
 	max-width: 830px
 	&__title__left, &__title__right
@@ -97,7 +110,7 @@ input:-webkit-autofill
 		font-size: 24px
 	&__div__left
 		padding-left: 10px
-		margin-bottom: 36px
+		padding-bottom: 36px
 	&__div__left > p
 		margin-bottom: 20px
 		&:last-child
@@ -150,8 +163,9 @@ input:-webkit-autofill
 		border-radius: 5px
 		border: 1px solid #e1e0cc
 		color: #b2b2b2
-		height: 36px
+		height: 38px
 		padding: 0 10px
+		line-height: 16px
 		&:focus
 			color: #000000
 	&__submit
@@ -166,7 +180,7 @@ input:-webkit-autofill
 			color: #fff
 
 .last__text
-	margin-bottom: 60px
+	padding-bottom: 60px
 .footer
 	margin: 0 auto
 	width: 1200px
@@ -190,4 +204,30 @@ input:-webkit-autofill
 	display: none
 input.grey
 	box-shadow: inset 0 0 0 50px #eef0e5 !important
-    -webkit-box-shadow: inset 0 0 0 50px #eef0e5 !important
+	-webkit-box-shadow: inset 0 0 0 50px #eef0e5 !important
+.row
+	-ms-flex-wrap: wrap
+	-webkit-flex-wrap: wrap
+.form
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	&__row
+		display: -webkit-box
+.footer, .header
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	justify-content: center
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-webkit-box-orient: horizontal
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	 align-items: center
