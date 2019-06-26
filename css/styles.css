@@ -14,12 +14,17 @@ input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #fff; }
 
 .btn:focus {
-  box-shadow: none; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .header {
   height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .header__container {
     width: 1000px;
     margin: 0 auto; }
@@ -43,6 +48,8 @@ input:-webkit-autofill {
   .title__text, .title__img {
     position: relative;
     margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content; }
   .title__text {
     color: #fff;
@@ -88,9 +95,15 @@ input:-webkit-autofill {
   background-color: #f7f8fa;
   margin-bottom: 40px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .section__points__text {
     text-align: center;
     line-height: 36px; }
@@ -139,8 +152,13 @@ input:-webkit-autofill {
   width: 800px;
   margin: 0 auto;
   padding: 25px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fff4b3;
   border-radius: 5px;
   font-size: 14px;
@@ -174,6 +192,8 @@ input:-webkit-autofill {
     background-color: #0d972b;
     border-radius: 5px;
     opacity: 0.3;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     color: #fff; }
     .form__submit:hover {
@@ -187,8 +207,12 @@ input:-webkit-autofill {
   width: 1200px;
   height: 60px;
   background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .footer__logo {
     margin-left: 15px;
     display: block;
@@ -201,11 +225,14 @@ input:-webkit-autofill {
   position: relative;
   color: #ff0000;
   font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .hide {
   display: none; }
 
 input.grey {
-  box-shadow: inset 0 0 0 50px #eef0e5 !important;
+  -webkit-box-shadow: inset 0 0 0 50px #eef0e5 !important;
+          box-shadow: inset 0 0 0 50px #eef0e5 !important;
     box-shadow--webkit-box-shadow: inset 0 0 0 50px #eef0e5 !important; }
