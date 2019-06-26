@@ -43,6 +43,7 @@ input:-webkit-autofill {
 .title {
   position: relative;
   margin: 0 auto;
+  text-align: center;
   width: 100%; }
   .title__text, .title__img {
     position: relative;
