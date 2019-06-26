@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<title>Test from Lenar Gimadeev</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />	
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.theme.css">
+</head>
+<body>
+<header class="header">
+	<div class="header__container">
+		<div class="logo">
+			<img src='img/logo.png' alt="logo">
+		</div>
+	</div>
+</header>
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title">
+					<div class="bg"></div>
+					<div class="title__text">
+						<span class="title__row1">Поставь ссылку на БИБОСС</span><br>
+						<span class="title__row2">Заработай баллы!</span>
+					</div>
+					<div class="title__img">
+						<img src="img/mac.png" alt="mac">
+						<div class="title__img__link"><a href="#">Франшиза Dunkin’ Donuts на БИБОСС</a></div>
+					</div>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="section__text">
+				<div class="col">
+					<p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:</p> 
+						<p>• Текстовая ссылка «Франшиза <span class="section__text__span">[Название]</span> на БИБОСС»<br>
+						• Текстовая ссылка «Наша франшиза на БИБОСС»<br>
+						• Кнопка “Нравится франшиза” + счетчик популярности</p>
+				</div>
+			</div>
+			<div class="section__points">
+				<div class="section__points__text">
+					<p class="section__points__row1">Зачем нужны <a href="#">баллы</a>?<br></p>
+					<!-- Если не ссылка, а подсказка то:  <abbr title="some text">баллы</abbr>   -->
+					<p class="section__points__row2">Больше баллов — выше позиция в выдаче категории</p>
+				</div>
+			</div>
+		</div>
+		<div class="row points__col">
+			<div class="col-6 points__col__left">
+				<div class="points__col__title__left"><p>Правила размещения ссылки</p>
+				</div>
+				<div class="points__col__div__left">
+					<p><xmt>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)</p>
+					<p>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,</p>
+					<p>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,</p>
+					<p>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</p>
+				</div>
+				</div>
+				<div class="col-6 points__col__right">
+				<div class="points__col__title__right"><p>Стоимость ссылки</p></div>
+				<div class="points__col__div__right">
+					<p class="green">200 баллов</p>
+					<p>ТиЦ Вашего сайта от 10</p>
+					<p class="green">50 баллов</p>
+					<p>ТиЦ Вашего сайта от 0 до 10</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="forms">
+	<div class="container">
+		<div class="form">
+			<div class="form__title">Получить ссылку</div>
+			<form action="">
+				<div class="row form__row">
+					<div class="col-3 form__label"><label for="form__name">Ваше имя</label></div>
+					<div class="col-7"><input type="text" id="form__name" class="form__input" placeholder="Представьтесь, пожалуйста"></div>
+				</div>
+				<div class="row form__row">
+					<div class="col-3 form__label"><label for="form__phone">Номер телефона</label></div>
+					<div class="col-7"><input type="tel" id="form__phone" class="form__input" placeholder="Для начисления баллов и связи с Вами"  maxlength="16" minlength="15" autocomplete="on" pattern="8\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"><div class="attention hide">Укажите правильный телефон</div></div>
+				</div>
+				<div class="row form__row">
+					<div class="col-3 form__label"><label for="form__title">Название франшизы</label></div>
+					<div class="col-7"><input id="form__title" type="text" class="form__input" id="form__title" placeholder="Например, Subway">
+				</div>
+				</div>
+				<div class="row form__row">
+					<div class="col-3 form__label"></div>
+					<div class="col-7"><input type="submit" value="Получить ссылку" id="form__submit" class="form__submit btn"></div>
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<div class="section__text last__text">
+				<p><b>Это еще не все...</b> Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__logo">
+		<img src="img/footer__logo.png" alt="footer__logo">
+	</div>
+	</div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
